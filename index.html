@@ -35,6 +35,7 @@
             background-clip: text;
             -webkit-background-clip: text;
             color: transparent;
+            -webkit-text-fill-color: transparent;
             margin-bottom: 0.5rem;
         }
         p {
@@ -53,6 +54,12 @@
         }
         a:hover {
             background: #2563eb;
+        }
+        @media (max-width: 480px) {
+            body { padding: 1.5rem; }
+            .emoji { font-size: 3.5rem; margin-bottom: 0.6rem; }
+            h1 { font-size: 4rem; }
+            p { font-size: 1.05rem; margin-bottom: 1.6rem; }
         }
     </style>
 </head>
