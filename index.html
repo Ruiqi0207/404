@@ -55,6 +55,12 @@
         a:hover {
             background: #2563eb;
         }
+        @supports (min-height: 100dvh) {
+            body { min-height: 100dvh; }
+        }
+        a:active {
+            transform: translateY(1px);
+        }
         @media (max-width: 480px) {
             body { padding: 1.5rem; }
             .emoji { font-size: 3.5rem; margin-bottom: 0.6rem; }
