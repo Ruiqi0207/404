@@ -55,11 +55,18 @@
         a:hover {
             background: #2563eb;
         }
+        @supports not ((-webkit-background-clip: text) or (background-clip: text)) {
+            h1 { background: none; color: #f97316; -webkit-text-fill-color: #f97316; }
+        }
         @supports (min-height: 100dvh) {
             body { min-height: 100dvh; }
         }
         a:active {
             transform: translateY(1px);
+        }
+        a:focus-visible {
+            outline: 2px solid #93c5fd;
+            outline-offset: 3px;
         }
         @media (max-width: 480px) {
             body { padding: 1.5rem; }
